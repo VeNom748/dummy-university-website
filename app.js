@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 var nodemailer = require('nodemailer');
+const port = process.env.PORT || 8000;
 const app = express();
 
 app.use(express.urlencoded())
@@ -90,6 +91,6 @@ app.post("/contact",(req,res)=>{
 
 
 //LISTING
-app.listen(80,()=>{
-    console.log("website online at http://localhost");
+app.listen(port,()=>{
+    console.log(`website online at http://localhost:${port}`);
 })
