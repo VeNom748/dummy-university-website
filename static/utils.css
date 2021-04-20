@@ -1,0 +1,45 @@
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: 2px solid white;
+    margin-top: 20px;
+    font-size: 14px;
+    transition: all 0.6s;
+    background: transparent;
+}
+.red-btn{
+    border: 2px solid var(--primary-color);
+    color: black;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 22px;
+}
+.red-btn:hover{
+    color: #ffffff;
+}
+.btn:hover{
+    background-color: rgb(245, 79, 38);
+}
+.form-btn{
+    width: 50%;
+    margin: auto;
+    text-align:center;
+}
+.h1p h1{
+    font-size: 34px;
+}
+.h1p p{
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}

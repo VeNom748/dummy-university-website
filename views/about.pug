@@ -1,0 +1,31 @@
+extends base.pug
+block frontpage
+    //- ----------First section-----------
+    section.sub-header
+        nav.navbar
+            div.nav-logo
+                img(src="/static/images/logo.png", alt="")
+            div.nav-list#nav-list
+                <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                ul
+                    li  #[a(href="/") HOME] 
+                    li  #[a(href="/about") ABOUT] 
+                    li  #[a(href="/course") COURSE] 
+                    li  #[a(href="/blog") BLOG] 
+                    li  #[a(href="/contact") CONTACT]
+            </div> 
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        h1 About Us
+    
+block content
+    section.about
+        div.row
+            div.about-column
+                h1 We are the Best in the World ,Lets Get Started!
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At necessitatibus inventore animi officiis omnis. Temporibus, laudantium dolore, optio unde quam natus id illo ipsum reprehenderit explicabo sunt facere hic. Cum adipisci iste minus dolores?
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed quae quia rem natus, perspiciatis at cumque cupiditate aspernatur maxime repellat nihil exercitationem cum iusto ipsa, veniam fugit voluptatum illum. Provident eius a expedita!
+                br
+                a(href="/about" class="btn red-btn") Enroll Now
+            div.about-column
+                img(src="/static/images/about.jpg", alt="")
+        

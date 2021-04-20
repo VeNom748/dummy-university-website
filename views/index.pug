@@ -1,0 +1,114 @@
+extends base.pug
+block frontpage
+    //- ----------First section-----------
+    section.header
+        nav.navbar
+
+            div.nav-logo
+                img(src="/static/images/logo.png", alt="")
+            div.nav-list#nav-list
+                <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                ul
+                    li  #[a(href="/") HOME] 
+                    li  #[a(href="/about") ABOUT] 
+                    li  #[a(href="/course") COURSE] 
+                    li  #[a(href="/blog") BLOG] 
+                    li  #[a(href="/contact") CONTACT]
+            </div> 
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        <div class="textbox flex-center" data-0-top="opacity:0;left:100px" data-200-top="opacity:1;left:0">
+            h1 #[span W]orld's #[span B]est #[span U]nivercity
+            p We are the Best in the World , If you think to Educate yourself Then you are in correct place. #[br] we can provide all Facilities to Our Students
+            a(href="/" class="btn") Visit Us Uo Know More    
+        </div>
+        
+block content
+    //- ---------second section--------
+    section.course-section.h1p
+       
+        h1 Courses We Offer's
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deleniti?
+
+        div.row
+            div.course-column
+                h3 Normal
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nihil deleniti, dolores iusto alias culpa distinctio saepe eveniet neque minus. Explicabo nihil nesciunt incidunt ipsum provident sint magnam
+            div.course-column
+                h3 Intermediate
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nihil deleniti, dolores iusto alias culpa distinctio saepe eveniet neque minus. Explicabo nihil nesciunt incidunt ipsum provident sint magnam
+            div.course-column
+                h3 Professional
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nihil deleniti, dolores iusto alias culpa distinctio saepe eveniet neque minus. Explicabo nihil nesciunt incidunt ipsum provident sint magnam
+
+    //-----------Third section-------------
+    section.campus.h1p
+        h1 Our Global Campus
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, consequuntur?
+        div.row
+            div.campus-column
+                img(src="/static/images/london.png", alt="")
+                div.layer
+                    h3 London
+            div.campus-column
+                img(src="/static/images/newyork.png", alt="")
+                div.layer
+                    h3 NewYork
+            div.campus-column
+                img(src="/static/images/washington.png", alt="")
+                div.layer
+                    h3 washington
+
+    //----------forth section------------
+    section.facilities.h1p
+        h1 Our Facilities
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta!    
+        div.row 
+            div.facilities-column
+                img(src="/static/images/basketball.png", alt="")
+                div.discription
+                    h3 Lagest PlayGrounds
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut neque incidunt qui. Fuga, dolore.
+            div.facilities-column
+                img(src="/static/images/cafeteria.png", alt="")
+                div.discription
+                    h3 Testy and Healthy Food
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut neque incidunt qui. Fuga, dolore.
+            div.facilities-column
+                img(src="/static/images/library.png", alt="")
+                div.discription
+                    h3 World Class Library
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut neque incidunt qui. Fuga, dolore.
+
+
+
+    //- --------fifth section-----------
+    section.reviews.h1p
+        h1 What Our Student Says
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatum!
+        div.row
+            div.review-column
+                img(src="/static/images/user2.jpg", alt="")
+                div.review-text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet dolores quia. Lorem ipsum dolor sit amet.
+                    h3 Rony Kelvin
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+            div.review-column
+                img(src="/static/images/user1.jpg", alt="")
+                div.review-text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet dolores quia. Lorem ipsum dolor sit amet.
+                    h3 Tinaa Kelvin
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+    //- -------section sixth----------
+    section.contact-banner.flex-center
+        h1 Enrol For Our Various Online Courses #[br] Anywhere From The World
+        a(href="/contact" class="btn") Contact us

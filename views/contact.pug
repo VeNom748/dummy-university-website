@@ -1,0 +1,47 @@
+extends base.pug
+block frontpage
+    //- ----------First section-----------
+    section.sub-header
+        nav.navbar
+            div.nav-logo
+                img(src="/static/images/logo.png", alt="")
+            div.nav-list#nav-list
+                <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                ul
+                    li  #[a(href="/") HOME] 
+                    li  #[a(href="/about") ABOUT] 
+                    li  #[a(href="/course") COURSE] 
+                    li  #[a(href="/blog") BLOG] 
+                    li  #[a(href="/contact") CONTACT]
+            </div> 
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        h1 Contact Us For More Information
+
+    section.location
+        h1 Our Location
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15144.084356531263!2d73.20921680897278!3d18.391891307084244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be83db1f745270d%3A0x6c1f637528f0f72a!2sWarasgaon%2C%20Maharashtra%20402304!5e0!3m2!1sen!2sin!4v1618063485671!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    div.contact-us
+        div.row.col-reverse
+            div.information
+                div.contact-column
+                    <i class="fa fa-address-card-o"></i>
+                    span
+                        h3 ABC Aparthment, XYZ road
+                        p Raigad Maharastra , INDIA
+                div.contact-column
+                    <i class="fa fa-phone"></i>
+                    span
+                        h3 Open only , Monday to Friday , At 10am to 5pm
+                div.contact-column
+                    <i class="fa fa-envelope-o"></i>
+                    h3 techsmart777@gmail.com
+
+            div.contact-form
+                h1 Feel Free To Contact us
+                form(action="/contact" method="post")
+                    input(type="text" name="name" placeholder="Enter Your name")
+                    input(type="tel" name="mobile" placeholder="Enter Mobile Number")
+                    input(type="email" name="email" placeholder="Enter Mobile email")
+                    textarea(name="address", cols="30", rows="5 " placeholder="Enter Address")
+                    textarea(name="more", cols="30", rows="5" placeholder="More about You")
+                    button.btn.red-btn Submit

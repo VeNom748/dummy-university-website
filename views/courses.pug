@@ -1,0 +1,55 @@
+extends base.pug
+block frontpage
+    //- ----------First section-----------
+    section.sub-header
+        nav.navbar
+            div.nav-logo
+                img(src="/static/images/logo.png", alt="")
+            div.nav-list#nav-list
+                <i class="fa fa-times-circle-o" onclick="closemenu()"></i>
+                ul
+                    li  #[a(href="/") HOME] 
+                    li  #[a(href="/about") ABOUT] 
+                    li  #[a(href="/course") COURSE] 
+                    li  #[a(href="/blog") BLOG] 
+                    li  #[a(href="/contact") CONTACT]
+            </div> 
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        h1 Our Courses
+block content
+    section.course-section.h1p
+            h1 Courses We Offer's
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deleniti?
+
+            div.row
+                div.course-column
+                    h3 Normal
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nihil deleniti, dolores iusto alias culpa distinctio saepe eveniet neque minus. Explicabo nihil nesciunt incidunt ipsum provident sint magnam
+                div.course-column
+                    h3 Intermediate
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nihil deleniti, dolores iusto alias culpa distinctio saepe eveniet neque minus. Explicabo nihil nesciunt incidunt ipsum provident sint magnam
+                div.course-column
+                    h3 Professional
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nihil deleniti, dolores iusto alias culpa distinctio saepe eveniet neque minus. Explicabo nihil nesciunt incidunt ipsum provident sint magnam
+    section.facilities.h1p
+        h1 Our Facilities
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, soluta!    
+        div.row 
+            div.facilities-column
+                img(src="/static/images/basketball.png", alt="")
+                div.discription
+                    h3 Lagest PlayGrounds
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut neque incidunt qui. Fuga, dolore.
+            div.facilities-column
+                img(src="/static/images/cafeteria.png", alt="")
+                div.discription
+                    h3 Testy and Healthy Food
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut neque incidunt qui. Fuga, dolore.
+            div.facilities-column
+                img(src="/static/images/library.png", alt="")
+                div.discription
+                    h3 World Class Library
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut neque incidunt qui. Fuga, dolore.
+
+
+        
