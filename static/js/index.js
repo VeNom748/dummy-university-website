@@ -1,4 +1,4 @@
-var navlist =document.getElementById("nav-list")
+var navlist = document.getElementById("nav-list")
 
 
 function showmenu(){
